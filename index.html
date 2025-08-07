@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timetable Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>My Weekly Timetable</h1>
+
+  <form id="timetable-form">
+    <input type="text" id="subject" placeholder="Subject" required />
+    <select id="day">
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+    </select>
+    <input type="time" id="time" required />
+    <button type="submit">Add</button>
+  </form>
+  <button id="clear-all">Clear All</button>
+
+  <table id="timetable">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Subject</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
